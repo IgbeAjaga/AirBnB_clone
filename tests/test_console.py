@@ -15,6 +15,10 @@ import unittest
 from io import StringIO
 from unittest.mock import patch
 from console import HBNBCommand
+import os
+import sys
+from models import storage
+from models.engine.file_storage import FileStorage
 
 
 class TestConsole(unittest.TestCase):
