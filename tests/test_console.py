@@ -24,9 +24,10 @@ from models.engine.file_storage import FileStorage
 class TestConsole(unittest.TestCase):
 	"""Unit tests for console.py"""
 
-	def setUp(self):
-    	"""Set up the test environment"""
-    	self.console = HBNBCommand()
+def setUp(self):
+    """Set up the test environment"""
+    self.console = HBNBCommand()
+
 
 	def tearDown(self):
     	"""Tear down the test environment"""
