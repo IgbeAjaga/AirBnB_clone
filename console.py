@@ -11,10 +11,15 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 from models import storage
+from shlex import split
 
 
 class HBNBCommand(cmd.Cmd):
-	"""Command interpreter class."""
+	"""
+        Command interpreter class
+        Attributes:
+        prompt (str): command prompt
+        """
 
 	prompt = "(hbnb) "
 
