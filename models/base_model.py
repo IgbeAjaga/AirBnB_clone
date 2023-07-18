@@ -15,7 +15,7 @@ class BaseModel:
     *args (any): Unused.
     **kwargs (dict): Key pairs of attributes.
     """
-    if kwargs:
+    if (kwargs):
         for key, value in kwargs.items():
             if key != '__class__':
                 if key in ('created_at', 'updated_at'):

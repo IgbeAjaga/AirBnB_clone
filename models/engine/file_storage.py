@@ -4,11 +4,14 @@ Handles I/O, writing and reading, of JSON for storage of all class instances
 """
 import json
 import os.path
-from models import base_model, amenity, city, place, review, state, user
+from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
 from datetime import datetime
-
-strptime = datetime.strptime
-to_json = base_model.BaseModel.to_json
 
 class FileStorage:
     __file_path = "file.json"
