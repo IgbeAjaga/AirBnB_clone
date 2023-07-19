@@ -10,4 +10,12 @@ class Amenity(BaseModel):
         name (str): The name of the amenity.
     """
 
-    name = ""
+    name = BaseModel.StringField(required=True)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.name = kwargs.get("name", "")
+
+    def __repr__(self):
+        return "Amenity(id={}, name={})".format(self.id, self.name)
+
