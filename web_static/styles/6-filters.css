@@ -1,0 +1,70 @@
+.filters {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+.amenities {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.popover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.popover li {
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 16px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.popover li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,46 @@
+/* Global styles for body and .container */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Make header tags more distinguishable */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+/* Add focus style for better keyboard navigation */
+a,
+button {
+    outline: none;
+}
+
+a:focus,
+button:focus {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 255, 0.5);
+}
+
+/* Improve color contrast for icons */
+.fa-dog,
+.fa-tv,
+.fa-wifi,
+.fa-users,
+.fa-bed,
+.fa-bath {
+    color: #333333;
+}
+
